@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <beans default-init-method="myInit" default-destroy-method="cleanUp"/> -->
+<beans 
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop = "http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+        
+    <aop:aspectj-autoproxy />
+    
+    <bean name="circle" class="model.Circle">
+      <property name="name" value="Circle 1"></property>
+    </bean>
+    
+    <bean name="triangle" class="model.Triangle">
+     <property name="name" value="Triangle 1"></property>
+    </bean>
+    
+    <bean name="shapeService" class="service.ShapeService"  autowire="byName"/>
+    <bean name="loggingAspect" class="aspect.LoggingAspect"/>
+    
+    <!--     Aspect based on xml configuration -->
+    <bean name="loggingAspectXml" class="aspect.LoggingAspectXmlBased"></bean>  
+    
+   <!--  <aop:config>
+      <aop:aspect id="LoggingAspectXmlBased" ref="loggingAspectXml"></aop:aspect>
+        <aop:pointcut expression="execution(* get*())" id="getAll"/>
+        <aop:around pointcut="execution(* get*())" method="myAroundAdviceXml" />
+        <aop:around pointcut-ref="getAll" method="myAroundAdviceXml2" />
+    </aop:config> -->
+    
+</beans>

@@ -1,0 +1,52 @@
+.modal-content {
+   background-color: transparent !important;
+}
+.mainModalbody{
+	text-align:center;
+}
+.bodyContent{
+	color:white;
+}
+span{
+	margin-left: 20%;
+}
+.commonFooter{
+	 
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    overflow-y: auto;
+    padding: 5px;
+    min-height: 50px;
+} 
+#confirm{
+	float:right;
+	    margin-right: 2%;
+}
+#contentHome{
+	    overflow-y: scroll;
+    height: 530px;
+}
+.mindreadermodalcontent{
+	    height: 320px;
+    width: 500px;
+}
+.mindreaderlbody{
+	margin-top: 44%;
+    text-align: center;
+}
+#result{
+	color:white;
+}
+.largefontsize{
+	font-size:80px !important;
+}
+.symboltext{
+	text-align: center;
+	border-bottom: 0px solid #e5e5e5;
+}
+.mindreaderfooter{
+	display:none;
+	border-top: 0px solid #e5e5e5;
+	margin-top: 11%;
+}

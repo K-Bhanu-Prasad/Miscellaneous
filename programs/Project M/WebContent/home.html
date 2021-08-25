@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<meta charset="UTF-8">
+    <title>Mind reader</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="home.js"></script>  
+</head>
+<body class="bodyContent">
+  <div  id ="contentHome"class= "container-fluid">
+    <div class="col-md-2 cloumn1"></div>
+    <div class="col-md-2 cloumn2"></div>
+    <div class="col-md-2 cloumn3"></div>
+    <div class="col-md-2 cloumn4"></div>
+    <div class="col-md-2 cloumn5"></div>
+    <div class="col-md-2 cloumn6"></div>
+  </div>
+  <div class="commonFooter">
+  <button id="confirm" class="btn btn-primary" >Got symbol</button>
+  </div>
+  <!-- popup for Main menu -->
+  <div id="mainModal" class="modal  fade " role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="daimler-icon icon-interaction-close close" data-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modelhead modal-title" id="myModalLabel"></h4>
+                </div>
+                <div class="modal-body mainModalbody">
+                    <h1 >Mind reader</h1>
+                    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="Start  btn btn-success" data-dismiss="modal" id="start">Start</button>
+                  <button type="button" class="closeModel btn btn-danger" data-dismiss="modal" id="closeModel" onclick="window.close()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- End of main menu -->
+    
+    <!-- popup for Tutorial -->
+  <div id="tutorial" class="modal fade " role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modelhead modal-title" id="myModalLabel">Tutorial</h4>
+                </div>
+                <div class="modal-body">
+                  <pre>
+                  Select a two digit number (original number)
+                  
+                  Reverse the number  (new number)
+                  
+                  Take the difference of the original number and new number
+                  
+                  Pick the symbol of the difference you got
+                  </pre>
+                    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="play btn btn-primary" data-dismiss="modal" id="play">Play</button>
+                  <button type="button" class="closeModel btn btn-danger" data-dismiss="modal" id="closeModel" onclick="window.close()">Close</button>
+                  
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- popup for reading mind -->
+  <div id="mindreader" class="modal  fade " role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog mindreadermodal">
+            <div class="modal-content mindreadermodalcontent">
+                <div class="modal-header symboltext">
+                </div>
+                <div class="modal-body mindreaderlbody">
+                    <h2 id="result">Reading your mind</h2>
+                </div>
+                <div class="modal-footer mindreaderfooter">
+                  <button type="button" class="playagain btn btn-success" data-dismiss="modal" id="playagain">Play again</button>
+                </div>
+                
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

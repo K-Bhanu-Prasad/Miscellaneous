@@ -1,0 +1,16 @@
+
+]squid:S1075	"ARefactor your code to get this URI from a customizable parameter.(§íà°üÿÿÿÿ
+]squid:S1075
+"ARefactor your code to get this URI from a customizable parameter.(Œ¾ö¥ûÿÿÿÿ
+hsquid:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÍÚê¢ıÿÿÿÿ
+_squid:S2095"IUse try-with-resources or close this "PrintWriter" in a "finally" clause.(²ãD
+hsquid:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(¾¡ÂÂÿÿÿÿÿ
+hsquid:S20951"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(í†¦©ÿÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(êªæÛşÿÿÿÿ
+O
+squid:S106-"9Replace this use of System.out or System.err by a logger.(‘ğé…
+T
+squid:S106:"9Replace this use of System.out or System.err by a logger.(³ğ¸ûÿÿÿÿ
+Asquid:S1481"*Remove this unused "line2" local variable.(ÁÀÀ¡
+Esquid:S1481")Remove this unused "flag" local variable.(ŸÿáÑÿÿÿÿÿ
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹ûÚë
